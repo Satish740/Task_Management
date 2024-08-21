@@ -104,6 +104,8 @@ cd backend
 source venv/bin/activate
 python manage.py runserver 127.0.0.1:8000
 ```
+
+![Backend](images/backend.png)
 ### 3. Start the Frontend Development Server Manually (If Needed)
 In another terminal window, navigate to the frontend directory and run:
 
@@ -111,6 +113,8 @@ In another terminal window, navigate to the frontend directory and run:
 cd frontend
 npm start
 ```
+
+![Frontend](images/frontend.png)
 ### 4. Access the Application
 
 The application should be running at http://localhost:3000.
