@@ -12,7 +12,7 @@ const TaskList = () => {
 
     const fetchTasks = async () => {
         try {
-            const response = await axios.get('http://127.0.0.1:8000/api/tasks/');
+            const response = await axios.get('/api/tasks/');
             setTasks(response.data);
             if (response.data.length === 0) {
                 setEditingTask(null); // Switch to "Add New Task" if no tasks
@@ -24,16 +24,16 @@ const TaskList = () => {
 
     const deleteTask = async (id) => {
         try {
-            await axios.delete(`http://127.0.0.1:8000/api/tasks/${id}/`);
+            await axios.delete(`/api/tasks/${id}/`);
             setTasks(tasks.filter(task => task.id !== id));
             
-            // Check if the deleted task was the one being edited
+       
             if (editingTask && editingTask.id === id) {
                 setEditingTask(null); // Switch to "Add New Task" if the currently edited task is deleted
             }
             
-            // If there are no tasks left and no task is being edited, switch to "Add New Task"
-            if (tasks.length === 1 && !editingTask) {
+          
+            if (tasks.length === 0 && !editingTask) {
                 setEditingTask(null); // Ensure we are in "Add New Task" mode if all tasks are deleted
             }
         } catch (error) {
@@ -61,8 +61,8 @@ const TaskList = () => {
           
             <TaskForm 
                 task={editingTask} 
-                onTaskSaved={handleTaskSaved} // Use handleTaskSaved here
-                onCancel={handleAddNew} // Pass handleAddNew to TaskForm
+                onTaskSaved={handleTaskSaved} 
+                onCancel={handleAddNew} 
             />
             {tasks.length === 0 && !editingTask && (
                 <div className="no-tasks-message">No tasks available. Please add a new task.</div>
