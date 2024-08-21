@@ -1,6 +1,6 @@
 # Simple Website Task Manager
-Author: Satish Jagadish
-Date: August 21, 2024
+##### Author: Satish Jagadish
+##### Date: August 21, 2024
 ## Overview
 
 This project is a simple Task Manager web application built with a React frontend and a Django backend. It allows users to create, edit, and delete tasks. The application is designed to be easily extendable and can be used as a starting point for more complex projects.
