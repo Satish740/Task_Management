@@ -22,10 +22,10 @@ const TaskForm = ({ task, onTaskSaved, onCancel }) => {
         try {
             if (task) {
                 // Update existing task
-                await axios.put(`http://127.0.0.1:8000/api/tasks/${task.id}/`, taskData);
+                await axios.put(`/api/tasks/${task.id}/`, taskData);
             } else {
                 // Create new task
-                await axios.post('http://127.0.0.1:8000/api/tasks/', taskData);
+                await axios.post('/api/tasks/', taskData);
             }
             setTitle(''); 
             setDescription(''); 

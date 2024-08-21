@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,7 +6,7 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Container for the task list */
+
 .task-list-container {
   width: 80%;
   max-width: 800px;
@@ -17,21 +17,21 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Header style */
+
 .task-list-header {
   text-align: center;
   color: #333;
   margin-bottom: 20px;
 }
 
-/* Form styling */
+
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* Input and textarea styling */
+
 input[type="text"],
 textarea {
   padding: 10px;
@@ -46,7 +46,6 @@ textarea {
   min-height: 100px;
 }
 
-/* Button styling */
 button {
   padding: 10px 15px;
   border: none;
@@ -62,7 +61,7 @@ button:hover {
   opacity: 0.8;
 }
 
-/* Add Task button */
+
 .add-new-button {
   background-color: #007bff;
   margin-bottom: 20px;
@@ -72,7 +71,7 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Edit and Delete buttons */
+
 .task-list-button {
   margin: 5px;
   font-size: 14px;
@@ -94,7 +93,7 @@ button:hover {
   background-color: #c82333;
 }
 
-/* Task list styling */
+
 .task-list {
   list-style: none;
   padding: 0;
@@ -111,7 +110,6 @@ button:hover {
   padding: 10px;
 }
 
-/* No tasks message */
 .no-tasks-message {
   text-align: center;
   color: #666;
